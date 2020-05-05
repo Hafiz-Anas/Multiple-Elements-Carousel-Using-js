@@ -1,0 +1,56 @@
+.container {
+    width: 1280px;
+    min-height: 200px;
+    position: relative;
+    margin: 50px auto;
+}
+@media screen and (max-width: 1024px) {
+    .container {width: 85%;}
+}
+@media screen and (max-width: 786px) {
+    .container {width: 80%;}
+}
+.inner {
+    overflow: hidden;
+}
+.track {
+    display: inline-flex;
+    transition: transform 1s;
+}
+.card-container {
+    width: 259px;
+    height: 250px;
+    flex-shrink: 0;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+}
+button {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: 0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+nav .prev {
+    left: -20px;
+    display: none;
+}
+nav .prev.show {display: block;}
+nav .next {
+    right: -20px;
+}
+nav .next.hide {display: none;}
